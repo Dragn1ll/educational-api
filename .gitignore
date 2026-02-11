@@ -353,3 +353,4 @@ MigrationBackup/
 appsettings.Secrets.json
 
 .idea/
+**/appsettings.Development.json
