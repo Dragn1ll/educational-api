@@ -9,6 +9,7 @@ using SimpleService.Contracts.Requests;
 using SimpleService.Domain.Abstractions;
 using SimpleService.Domain.Services;
 using SimpleService.Infrastructure.PostgreSql;
+using SimpleService.Infrastructure.PostgreSql.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -39,7 +40,8 @@ services.AddMassTransit(x =>
 services.AddSingleton<FileLogQueue>();
 services.AddHostedService<FileLogWriterHostedService>();
 
-services.AddSingleton<IUserService, UserService>();
+services.AddScoped<IUserService, UserService>();
+services.AddScoped<IUserRepository, UserRepository>();
 services.AddScoped<IValidator<AuthRequest>, AuthRequestValidator>();
 
 builder.Services.AddDistributedMemoryCache();
