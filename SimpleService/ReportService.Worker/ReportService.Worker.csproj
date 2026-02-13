@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>dotnet-ReportService.Worker-f2d56fd0-ed6b-4a9b-b3da-68b6d105a46c</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="MassTransit.RabbitMQ" Version="9.0.1" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\SimpleService.Contracts\SimpleService.Contracts.csproj" />
+    </ItemGroup>
+</Project>

@@ -6,4 +6,19 @@
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\SimpleService.Contracts\SimpleService.Contracts.csproj" />
+      <ProjectReference Include="..\SimpleService.Domain\SimpleService.Domain.csproj" />
+      <ProjectReference Include="..\SimpleService.Infrastructure.PostgreSql\SimpleService.Infrastructure.PostgreSql.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FluentValidation" Version="12.1.1" />
+      <PackageReference Include="MassTransit.RabbitMQ" Version="9.0.1" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.3" />
+      <PackageReference Include="NLog.Web.AspNetCore" Version="6.1.1" />
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.0" />
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="10.1.2" />
+    </ItemGroup>
+
 </Project>
