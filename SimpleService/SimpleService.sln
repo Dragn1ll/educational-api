@@ -12,6 +12,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleService.Contracts", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportService.Worker", "ReportService.Worker\ReportService.Worker.csproj", "{F23FDC7C-6709-46A2-AF1C-820ED0AB0B25}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution items", "solution items", "{FD2E3D99-7F4A-48E9-AD6B-A600750766D7}"
+	ProjectSection(SolutionItems) = preProject
+		.env = .env
+		db.sql = db.sql
+		docker-compose.yaml = docker-compose.yaml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
