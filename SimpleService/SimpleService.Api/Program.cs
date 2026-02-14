@@ -48,6 +48,7 @@ services.AddScoped<IValidator<AuthRequest>, AuthRequestValidator>();
 
 services.Configure<EmailSettings>(builder.Configuration.GetSection("Email"));
 services.AddScoped<IEmailService, MailKitEmailService>();
+services.AddScoped<INotificationService, MailKitNotificationService>();
 
 services.AddDistributedMemoryCache();
 services.AddSession(options =>
