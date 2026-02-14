@@ -7,8 +7,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\SimpleService.Infrastructure.Email\SimpleService.Infrastructure.Email.csproj" />
-      <ProjectReference Include="..\SimpleService.SharedKernel\SimpleService.SharedKernel.csproj" />
+      <PackageReference Include="MailKit" Version="4.14.1" />
+      <PackageReference Include="Microsoft.Extensions.Logging" Version="10.0.3" />
     </ItemGroup>
 
 </Project>

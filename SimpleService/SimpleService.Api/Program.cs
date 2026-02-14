@@ -8,6 +8,8 @@ using SimpleService.Api.Validators;
 using SimpleService.Contracts.Requests;
 using SimpleService.Domain.Abstractions;
 using SimpleService.Domain.Services;
+using SimpleService.Infrastructure.Email;
+using SimpleService.Infrastructure.Email.Abstractions;
 using SimpleService.Infrastructure.PostgreSql;
 using SimpleService.Infrastructure.PostgreSql.Repositories;
 
@@ -44,8 +46,12 @@ services.AddScoped<IUserService, UserService>();
 services.AddScoped<IUserRepository, UserRepository>();
 services.AddScoped<IValidator<AuthRequest>, AuthRequestValidator>();
 
-builder.Services.AddDistributedMemoryCache();
-builder.Services.AddSession(options =>
+services.Configure<EmailSettings>(builder.Configuration.GetSection("Email"));
+services.AddScoped<IEmailService, MailKitEmailService>();
+services.AddScoped<INotificationService, MailKitNotificationService>();
+
+services.AddDistributedMemoryCache();
+services.AddSession(options =>
 {
     options.IdleTimeout = TimeSpan.FromMinutes(15);
     options.Cookie.HttpOnly = true;
