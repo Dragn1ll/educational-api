@@ -9,6 +9,7 @@
     <ItemGroup>
       <ProjectReference Include="..\SimpleService.Contracts\SimpleService.Contracts.csproj" />
       <ProjectReference Include="..\SimpleService.Domain\SimpleService.Domain.csproj" />
+      <ProjectReference Include="..\SimpleService.Infrastructure.Email\SimpleService.Infrastructure.Email.csproj" />
       <ProjectReference Include="..\SimpleService.Infrastructure.PostgreSql\SimpleService.Infrastructure.PostgreSql.csproj" />
     </ItemGroup>
 
