@@ -19,6 +19,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution items", "solution 
 		docker-compose.yaml = docker-compose.yaml
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleService.Infrastructure.Email", "SimpleService.Infrastructure.Email\SimpleService.Infrastructure.Email.csproj", "{FA6D44E7-B6EE-42D8-97C6-888C1CBC98D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,5 +51,9 @@ Global
 		{F23FDC7C-6709-46A2-AF1C-820ED0AB0B25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F23FDC7C-6709-46A2-AF1C-820ED0AB0B25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F23FDC7C-6709-46A2-AF1C-820ED0AB0B25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA6D44E7-B6EE-42D8-97C6-888C1CBC98D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA6D44E7-B6EE-42D8-97C6-888C1CBC98D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA6D44E7-B6EE-42D8-97C6-888C1CBC98D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA6D44E7-B6EE-42D8-97C6-888C1CBC98D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
